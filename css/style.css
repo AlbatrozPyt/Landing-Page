@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.grid-layout {
+    width: 80%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #080324;
+}
+header {
+    background-color: #F9003D;
+    height: 60px;
+}
+
+header nav {
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+}
