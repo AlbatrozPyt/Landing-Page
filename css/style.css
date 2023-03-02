@@ -8,6 +8,8 @@
     margin: 0;
     padding: 0;
 }
+
+/* Classes */
 .grid-layout {
     max-width: 1200px;
     width: 100%;
@@ -47,25 +49,16 @@ header nav a{
     font-family: 'Bebas Neue';
 }
 
-/* Main */
-main {
-    position: relative;
+header nav a:hover {
+    background-color: white;
+    color: #F9003D;
 }
 
-main #Banner-Fundo {
-    position: absolute;
+/* Main */
+main .banner {
+    color: white;
     width: 100%;
     height: 740px;
-}
-
-main h1 {
-    position: absolute;
-    top: 230px;
-    left: 10%;
-    /* border: 2px solid cyan; */
-    color: white;
-    font-size: 96px;
-    font-family: 'Bebas Neue';
-    font-weight: 100;
-    
+    background-image: url(../assets/img/imagem-fundo-banner.png);
+    background-repeat: no-repeat;
 }
