@@ -1,3 +1,4 @@
+/* Importação da Fonte */
 @font-face {
     font-family: 'Bebas Neue';
     src: url(../assets/Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
@@ -11,9 +12,9 @@
 
 /* Classes */
 .grid-layout {
-    max-width: 1200px;
-    width: 100%;
-    height: 100%;
+    max-width: 1200px; /* Tamanho maximo da imagem */
+    width: 100%; /* Tamanho de 100% */
+    height: 100%; /* 100% de altura da imagem */
     margin: 0 auto;
 }
 
@@ -37,11 +38,11 @@ header .header-flex {
 header nav {
     display: flex;
     justify-content: space-between;
-    width: 600px;
+    width: 600px; 
 }
 
 header nav a{
-    padding: 15px 25px;
+    padding: 15px 25px; /* Espaçamento interno */
     border-radius: 5px;
     border: 1px solid white;
     color: white;
@@ -59,6 +60,67 @@ main .banner {
     color: white;
     width: 100%;
     height: 740px;
-    background-image: url(../assets/img/imagem-fundo-banner.png);
-    background-repeat: no-repeat;
+    background-image: url(../assets/img/imagem-fundo-banner.png); /* URL da imagem */
+    background-repeat: no-repeat; /* A imagem não repete */
+    background-size: cover; /* Tamanho da imagem */
+    background-position: bottom; /* Posição da imagem */
+}
+
+main .banner-flex {
+    display: flex;
+    align-items: center;
+}
+
+main .banner #banner-info {
+    width: 545px;
+}
+
+main .banner h1 {
+    font-size: 96px;
+    font-family: 'Bebas Neue';
+    font-weight: 100;
+    border-bottom: 1px solid #FFAF00;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+main .banner h1:hover {
+    color: whitesmoke;
+    text-shadow: 0px 10px 10px black;
+}
+
+main .banner p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 53px;
+    font-weight: bold;
+    color: #F9003D;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+
+main section h2 {
+    padding: 50px 0 50px;
+    font-size: 64px;
+    font-family: 'Bebas Neue';
+    font-weight: 100;
+    color: #F9003D;
+}
+
+main section .section-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+main section #section-info-1 {
+    border: cyan solid 2px;
+    width: 1200px;
+}
+
+main section #section-info-2 h3 {
+   color: white;
+   font-size: 24px;
+   font-weight: bold;
+   font-family: 'Courier New', Courier, monospace;
 }
