@@ -3,6 +3,10 @@
     font-family: 'Bebas Neue';
     src: url(../assets/Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
 }
+@font-face {
+    font-family: 'Opens Sans';
+    src: url(../assets/Fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
 
 * {
     box-sizing: border-box;
@@ -22,7 +26,7 @@ body {
     background-color: #080324;
 }
 
-/* Header */
+/* ===Header=== */
 header {
     background-color: #F9003D;
     height: 60px;
@@ -55,7 +59,8 @@ header nav a:hover {
     color: #F9003D;
 }
 
-/* Main */
+/* ===Main=== */
+/* Imagem de fundo */
 main .banner {
     color: white;
     width: 100%;
@@ -66,15 +71,18 @@ main .banner {
     background-position: bottom; /* Posição da imagem */
 }
 
+/* Flexbox */
 main .banner-flex {
     display: flex;
     align-items: center;
 }
 
+/* Texto */
 main .banner #banner-info {
     width: 545px;
 }
 
+/* Titulo h1 */
 main .banner h1 {
     font-size: 96px;
     font-family: 'Bebas Neue';
@@ -84,11 +92,13 @@ main .banner h1 {
     padding-bottom: 20px;
 }
 
+/* Hover titulo h1 */
 main .banner h1:hover {
     color: whitesmoke;
     text-shadow: 0px 10px 10px black;
 }
 
+/* paragrafo */
 main .banner p {
     font-family: 'Courier New', Courier, monospace;
     font-size: 53px;
@@ -99,28 +109,131 @@ main .banner p {
     padding-bottom: 30px;
 }
 
+/* Main -> Seção */
+main section .section-flex {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    /* border: yellow solid 2px; */
+    height: 617px;
+    width: 1200px;
+}
 
-main section h2 {
-    padding: 50px 0 50px;
+/* ----section-info-1---- */
+/* Borda da section-info-1 */
+/* main section #section-info-1 {
+    border: cyan solid 2px;
+} */
+
+/* Imagem section-info-1 */
+main section #section-info-1 img {
+    width: 490px;
+    height: 476px;
+}
+
+/* Titulo h2 da sectio-info-1 */
+main section #section-info-1 h2 {
+    padding: 25px 0 20px;
     font-size: 64px;
     font-family: 'Bebas Neue';
     font-weight: 100;
     color: #F9003D;
 }
 
-main section .section-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-main section #section-info-1 {
-    border: cyan solid 2px;
-    width: 1200px;
-}
+/* ----section-info-2---- */
+/* borad da section-info-2 */
+/* main section #section-info-2 {
+    border: red solid 2px;
+} */
 
+/* Titulo h3 section-info-2 */
 main section #section-info-2 h3 {
    color: white;
    font-size: 24px;
    font-weight: bold;
    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Titulo h2 section-info-2 */
+main section #section-info-2 h2 {
+    padding: 50px 0 50px;
+    width: 557px;
+    font-size: 64px;
+    font-family: 'Bebas Neue';
+    font-weight: 100;
+    color: #FFAF00;
+}
+
+/* paragrafo section-info-2 */
+main section #section-info-2 p {
+    width: 592px;
+    font-family: 'Opens Sans';
+    color: white;
+}
+
+/* ===Rodapé=== */
+footer {
+    background-image: url(../assets/img/imagem-fundo-endereco.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 598px;
+}
+
+footer .footer-flex {
+    border: red solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .endereco {
+    border: #FFAF00 solid 2px;
+    width: 899px;
+    height: 289px;
+}
+
+footer h1 {
+    font-size: 64px;
+    font-weight: 100;
+    font-family: 'Bebas Neue';
+    color: #FFAF00;
+}
+
+footer .endereco p {
+    display: flex;
+    justify-content: center;
+    background-color: #010010;
+    border: #340B65 solid 2px;
+    width: 899px;
+    height: 203px;
+    color: #A259F7;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    padding: 50px 0 50px;
+}
+
+footer .endereco p img
+
+footer #cop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F9003D;
+    height: 82px;
+    width: 100%;
+}
+
+footer #cop p {
+    font-family: 'Opens Sans';
+    font-size: 18px;
+    color: white;
 }
