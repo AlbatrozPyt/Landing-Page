@@ -153,8 +153,6 @@ main section #section-info-1 h2 {
 
 /* ----section-info-2---- */
 
-
-
 /* Titulo h3 section-info-2 */
 main section #section-info-2 h3 {
    color: white;
@@ -177,10 +175,39 @@ main section #section-info-2 h2 {
 main section #section-info-2 p {
     width: 592px;
     font-family: 'Opens Sans';
+    line-height: 28px;
     color: white;
 }
 
+main .lugar {
+    background-image: url(../assets/img/imagem-fundo-info.png);
+    height: 200px;
+}
 
+main .lugar-flex {
+    display: flex;
+    align-items: center;
+}
+
+main .justificar {
+    
+}
+
+main .lugar h4 {
+    font-size: 24px;
+}
+
+main .lugar p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #A259F7;
+    border: 1px solid #A259F7;
+    width: 289px;
+    height: 100px;
+}
 
 /* ===Rodapé=== */
 footer {
