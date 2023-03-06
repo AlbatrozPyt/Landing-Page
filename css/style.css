@@ -24,6 +24,9 @@
 
 body {
     background-color: #080324;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
 }
 
 /* ===Header=== */
@@ -119,21 +122,29 @@ main section .section-flex {
     width: 1200px;
 }
 
+main #secao {
+    display: flex;
+    align-items: center;
+    height: 700px;
+    width: 100%;
+}
+
 /* ----section-info-1---- */
-/* Borda da section-info-1 */
-/* main section #section-info-1 {
-    border: cyan solid 2px;
-} */
+
+
 
 /* Imagem section-info-1 */
 main section #section-info-1 img {
     width: 490px;
     height: 476px;
 }
+main section #section-info-1 img:hover {
+    box-shadow: 1px 1px 5px white;
+}
 
 /* Titulo h2 da sectio-info-1 */
 main section #section-info-1 h2 {
-    padding: 25px 0 20px;
+    padding: 20px 0 30px;
     font-size: 64px;
     font-family: 'Bebas Neue';
     font-weight: 100;
@@ -141,10 +152,8 @@ main section #section-info-1 h2 {
 }
 
 /* ----section-info-2---- */
-/* borad da section-info-2 */
-/* main section #section-info-2 {
-    border: red solid 2px;
-} */
+
+
 
 /* Titulo h3 section-info-2 */
 main section #section-info-2 h3 {
@@ -171,6 +180,8 @@ main section #section-info-2 p {
     color: white;
 }
 
+
+
 /* ===Rodapé=== */
 footer {
     background-image: url(../assets/img/imagem-fundo-endereco.png);
@@ -196,7 +207,6 @@ footer .center {
 }
 
 footer .endereco {
-    border: #FFAF00 solid 2px;
     width: 899px;
     height: 289px;
 }
@@ -221,7 +231,13 @@ footer .endereco p {
     padding: 50px 0 50px;
 }
 
-footer .endereco p img
+  footer .endereco p img {
+    position: relative;
+    left: 70px;
+    bottom: 150px;
+    width: 309px;
+    height: 249px;
+  }
 
 footer #cop {
     display: flex;
