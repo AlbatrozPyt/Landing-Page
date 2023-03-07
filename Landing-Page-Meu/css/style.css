@@ -8,13 +8,20 @@
     src: url(../assets/Fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
+/*RESET CSS*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Classes */
+/* ////Desktop First\\\\ */
+/*Esconde o icone do menu-hamburguer*/
+header #menu-hamburguer {
+    display: none;
+}
+
+/* Classe grid-layout para centralização */
 .grid-layout {
     max-width: 1200px; /* Tamanho maximo da imagem */
     width: 100%; /* Tamanho de 100% */
@@ -22,6 +29,7 @@
     margin: 0 auto;
 }
 
+/*Body*/
 body {
     background-color: #080324;
     color: white;
@@ -289,4 +297,21 @@ footer #cop p {
     font-family: 'Opens Sans';
     font-size: 18px;
     color: white;
+}
+
+
+/* Smartphone */
+
+@media screen and (max-width: 767px){
+    main, footer {
+        display: none;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header #menu-hamburguer {
+        display: block;
+    }    
 }
